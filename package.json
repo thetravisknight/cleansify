@@ -1,0 +1,49 @@
+{
+  "name": "cleansify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "keywords": [
+    "string",
+    "convert",
+    "kebab-case",
+    "text",
+    "dash",
+    "transform",
+    "kebab",
+    "simple"
+  ],
+  "author": "Travis Knight <travis@travisknight.net> (https://travisknight.net/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.0",
+    "ts-jest": "^27.1.3",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.6.2"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/travis1012/cleansify"
+  },
+  "bugs": {
+    "url": "https://github.com/travis1012/cleansify/issues"
+  },
+  "homepage": "https://github.com/travis1012/cleansify"
+}
