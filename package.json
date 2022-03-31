@@ -1,7 +1,7 @@
 {
   "name": "cleansify",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cleansify provides the ability to clean a string by replacing special characters with a different character. It is also possible to create kebab case strings.",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
