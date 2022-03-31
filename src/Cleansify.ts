@@ -20,13 +20,13 @@ export class Cleansify {
 		if(!this._string || !this._string.length) return null;
 
 		let stringReplacement = this.config.replacement;
-		if(this.config.case == "kebab") {
+		if(this.config.case === "kebab") {
 			stringReplacement = "-"
 		}
 
 		let cleansedString = this._string.replace(/[&\/\\#,+()$~%.'":*?<>{}_]/g, stringReplacement);
 
-		if(this.config.case == "kebab") {
+		if(this.config.case === "kebab") {
 			cleansedString = cleansedString.replace(/[\s]/g, stringReplacement);
 			cleansedString = cleansedString.replace(/(\-){2,}/g, "-")
 			if(cleansedString.startsWith("-")) {
