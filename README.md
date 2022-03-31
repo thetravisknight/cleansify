@@ -26,7 +26,7 @@ console.log(cleansify('winter_(weather)', { replacement: '-', case: 'upper' }));
 Option | Default | Description
 --- | --- | ---
 maxLength | `100` | The maximum length of the returned clean string
-replacement | `"null"` | The value to replace the special characters with. Special
+replacement | `"null"` | The value to replace the special characters with.
 case | `"default"` | The case of the string returned (i.e. Uppercase, Lowercase). Allowed values: `"lower"`, `"upper"`, `"kebab"`, `"default"`. `"default"` will return the string as is without changing its case. `"kebab"` will replace special characters and spaces with a `"-"` (this will ignore `"replacement"` configuration).
 
 <h3>Contributing</h3>
